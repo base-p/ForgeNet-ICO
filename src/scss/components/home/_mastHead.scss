@@ -1,0 +1,55 @@
+.c-mastHead {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    min-height: 70vh;
+    color: #fff;
+    background: #000 url(../../assets/images/masthead.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.c-mastHead__identity {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.c-mastHead__whitepaper {
+    position: absolute;
+    left: 1em;
+    bottom: 1em;
+    margin: 0;
+}
+
+.c-mastHead .c-joinConversation {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+}
+
+@media (min-width: 860px) {
+    .c-mastHead__actions {
+        position: absolute;
+        width: 80%;
+        bottom: 50px;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        text-align: center;
+    }
+
+    .c-mastHead__identity {
+        transform: translate(-50%, -50%);
+    }
+
+    .c-mastHead__whitepaper,
+    .c-mastHead .c-joinConversation {
+        position: static;
+    }
+
+    .c-mastHead__whitepaper {
+        margin-bottom: 1em;
+    }
+}

@@ -1,0 +1,18 @@
+{{ loadStyle('main') }}
+{{ loadStyle('home') }}
+
+<!doctype html>
+<html class='no-js' lang='nl'>
+    <head>
+        {% include 'partials/head.twig' %}
+    </head>
+    <body>
+        <section class='l-row l-row--mastHead l-row--noPadding l-row--fullwidth'>
+            <div class='l-row__inner'>
+                {% include 'components/home/mastHead.twig' %}
+            </div>
+        </section>
+        {{ post.content|raw }}
+        {% include 'partials/footer.twig' %}
+    </body>
+</html>

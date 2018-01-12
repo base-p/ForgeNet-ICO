@@ -1,0 +1,29 @@
+{
+  "name": "ForgeNet",
+  "version": "0.1.0",
+  "description": "Wordpress template for ForgeNet",
+  "scripts": {
+    "build-css:scss-compile": "node-sass-chokidar src/scss/ -o dist/css",
+    "build-css:autoprefixer": "postcss dist/css/*.css --use autoprefixer -d dist/css",
+    "build-css:cssnano": "postcss dist/css/*.css --use cssnano -d dist/css",
+    "css:dev": "npm-run-all -s build-css:scss-compile build-css:autoprefixer build-css:cssnano",
+    "build-js:countdown": "uglifyjs src/js/countDown.js -o dist/js/countDown.min.js -m -c",
+    "js:dev": "npm-run-all -p build-js:*",
+    "watch:css": "onchange 'src/scss/**/*.scss' -- npm run css:dev",
+    "watch:js": "onchange 'src/js/*.js' -- npm run js:dev",
+    "dev": "npm-run-all -p watch:*"
+  },
+  "keywords": [],
+  "author": "ForgeNet",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^7.1.1",
+    "chokidar-cli": "^1.2.0",
+    "node-sass-chokidar": "^0.0.1",
+    "npm-run-all": "^4.0.2",
+    "postcss-cli": "^4.0.0",
+    "cssnano": "^3.10.0",
+    "uglify-js": "^3.0.27",
+    "onchange": "^3.2.1"
+  }
+}

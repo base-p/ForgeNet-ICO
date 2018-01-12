@@ -1,0 +1,16 @@
+.c-joinConversation__list,
+.c-joinConversation__list li {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.c-joinConversation__label {
+    margin-bottom: 0.25em;
+}
+
+@media (min-width: 800px) {
+    .c-joinConversation__label {
+        display: inline-block;
+        margin: 0;
+    }
+}

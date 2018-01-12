@@ -1,0 +1,21 @@
+.c-button {
+    display: inline-block;
+    padding: .6em 1.75em;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid $color-red;
+    color: $color-red;
+    background: transparent;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.c-button--white {
+    color: $color-white;
+    border-color: $color-white;
+}
+
+.c-button--white:hover {
+    color: $color-black;
+    background-color: $color-white;
+}

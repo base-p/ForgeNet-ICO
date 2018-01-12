@@ -1,0 +1,76 @@
+.c-timeLine {
+    position: relative;
+    margin: auto;
+}
+
+.c-timeLine::after  {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 1px solid rgba(191, 191, 191, 0.8);
+}
+
+.c-event {
+    position: relative;
+    display: block;
+    margin: 10px auto 80px;
+    max-width: 94%;
+    padding: 1em;
+    background: #fff;
+    z-index: 2;
+}
+
+@media (min-width: 480px) {
+    .c-event {
+        max-width: 80%;
+        box-shadow: 0 1px 22px 4px rgba(0, 0, 0, 0.07);
+    }
+}
+
+@media (min-width: 720px) {
+    .c-timeLine {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .c-timeLine::after {
+        left: -50px;
+    }
+
+    .c-event {
+        max-width: none;
+    }
+
+    .c-event h3 {
+        position: relative;
+    }
+
+    .c-event h3::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -70px;
+        margin-top: -5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #000;
+    }
+
+    .c-event h3::after {
+        left: -55px;
+        top: 50%;
+        border: solid transparent;
+        content: '';
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-right-color: #fff;
+        border-width: 20px;
+        margin-top: -20px;
+    }
+}

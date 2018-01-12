@@ -1,0 +1,16 @@
+<section class='l-row l-row--footer p-footer'>
+    <div class='l-row__inner'>
+        <div class='p-footer__first'>
+            <h2>Early bird sale coming soon</h2>
+            {% include 'components/countDown.twig' %}
+            <p>{% include 'components/button.twig' with { url: '/subscribe', title: 'Get notified!', color: 'white' } %}</p>
+        </div>
+        <div class='p-footer__second'>
+            {% include 'components/joinConversation.twig' %}
+        </div>
+        <div class='p-footer__third'>
+            <p>Copyright 2018 The Forge Network. All rights reserved.</p>
+        </div>
+    </div>
+</section>
+{{ function('wp_footer') }}

@@ -1,0 +1,41 @@
+.c-tile {
+    margin-bottom: 4em;
+    padding: 3em 1em 1em;
+    position: relative;
+    background-color: #fff;
+}
+
+.c-tile__icon {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    margin-left: -50px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 18px;
+}
+
+@media (min-width: 500px) {
+    .c-tile  {
+        padding: 4em;
+    }
+}
+
+@media (min-width: 650px) {
+    .c-tile {
+        padding: 5em;
+    }
+}
+
+@media (min-width: 860px) {
+    .c-tiles {
+        display: flex;
+        margin-bottom: 0;
+    }
+
+    .c-tile {
+        width: 32%;
+        margin: 1%;
+        padding: 3em 1em 1em;
+    }
+}

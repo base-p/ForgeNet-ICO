@@ -1,0 +1,35 @@
+@import 'generic/settings';
+@import 'components/home/identity';
+@import 'components/home/mastHead';
+
+.l-row--mastHead {
+    padding: 0;
+}
+
+.l-row--countDown {
+    padding: 2em;
+    color: #fff;
+    text-align: center;
+    background-image: radial-gradient(90% 100%,#ff0006 0,#5b1215 100%);
+}
+
+.l-row--whyForgeNet,
+.l-row--timeLine {
+    overflow: hidden;
+    background-color: #e6e6e6;
+}
+
+.l-row--frgCoin {
+    color: #fff;
+    background-image: radial-gradient(90% 100%,#ff0006 0,#5b1215 100%);
+}
+
+@media (min-width: 800px) {
+    .l-row--frgCoin .l-col:last-child {
+        padding-right: 4em;
+    }
+}
+
+.l-row--team {
+    text-align: center;
+}

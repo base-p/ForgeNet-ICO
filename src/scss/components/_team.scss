@@ -1,0 +1,60 @@
+.c-team,
+.c-member ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.c-member {
+    margin-bottom: 5em;
+}
+
+.c-member img {
+    margin: 0 auto;
+    border: 10px solid #eee;
+    border-radius: 50%;
+}
+
+.c-member p {
+    margin-bottom: 0.25em;
+}
+
+.c-member strong,
+.c-member em {
+    display: block;
+}
+
+.c-member li {
+    display: inline-block;
+}
+
+.c-member p:last-child {
+    color: $color-dark-grey;
+}
+
+@media (min-width: 420px) {
+    .c-team {
+        max-width: 340px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 670px) {
+    .c-team {
+        display: flex;
+        flex-flow: wrap;
+        max-width: none;
+    }
+
+    .c-member {
+        width: 44%;
+        margin: 3%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .c-member {
+        width: 40%;
+        margin: 5%;
+    }
+}

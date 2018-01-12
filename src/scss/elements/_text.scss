@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'helvetica-neue';
+    src: url('../../assets/fonts/helveticaneue-webfont.eot');
+    src: local('Helvetica Neue'),
+        url('../../assets/fonts/helveticaneue-webfont.eot') format('embedded-opentype'),
+        url('../../assets/fonts/helveticaneue-webfont.woff') format('woff'),
+        url('../../assets/fonts/helveticaneue-webfont.ttf') format('truetype'),
+        url('../../assets/fonts/helveticaneue-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'helvetican-neue-light';
+    src: url('../../assets/fonts/helveticaneue-light-webfont.eot');
+    src: local('Helvetica Neue Light'),
+        url('../../assets/fonts/helveticaneue-light-webfont.eot') format('embedded-opentype'),
+        url('../../assets/fonts/helveticaneue-light-webfont.woff') format('woff'),
+        url('../../assets/fonts/helveticaneue-light-webfont.ttf') format('truetype'),
+        url('../../assets/fonts/helveticaneue-light-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fjalla-one-regular';
+    src: url('../../assets/fonts/Fjalla-One-regular.eot');
+    src: local('Fjalla One'),
+    url('../../assets/fonts/Fjalla-One-regular.eot') format('embedded-opentype'),
+    url('../../assets/fonts/Fjalla-One-regular.woff') format('woff'),
+    url('../../assets/fonts/Fjalla-One-regular.ttf') format('truetype'),
+    url('../../assets/fonts/Fjalla-One-regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+input,
+textarea,
+select,
+button {
+    font-family: $font-normal;
+    font-size: $base-font-size;
+}
+
+html {
+    line-height: 1.7;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-headings;
+    font-weight: normal;
+}
+
+p, pre, ul, ol, blockquote, dl {
+    margin: 0 0 1.5em;
+}
+
+a {
+    text-decoration: underline;
+    color: $color-red;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+pre {
+    padding: 1em;
+    background: $color-light-green;
+}
+
+dt {
+    float: left;
+    width: 100px;
+}
+
+dd {
+    margin-left: 110px;
+}

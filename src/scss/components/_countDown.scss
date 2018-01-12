@@ -1,0 +1,23 @@
+@media (min-width: 800px) {
+    .c-countDown {
+        max-width: 730px;
+        margin: 0 auto;
+    }
+}
+
+.c-countDown__list {
+    display: flex;
+}
+
+.c-countDown__list li {
+    width: 25%;
+}
+
+.c-countDown__value,
+.c-countDown__label {
+    display: block;
+}
+
+.c-countDown__value {
+    font-size: 3em;
+}
