@@ -22,6 +22,10 @@ try {
         return Timber::render('home.twig', $context);
     }
 
+    if (is_page()) {
+        return Timber::render('page.twig', $context);
+    }
+
 	return Timber::render('404.twig', $context);
 } catch (Twig_Error_Loader $unableToFindTwigFile) {
 	echo 'Oops, something went wrong';
