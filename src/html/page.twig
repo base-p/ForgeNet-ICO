@@ -1,0 +1,12 @@
+{{ loadStyle('main') }}
+<!doctype html>
+<html class='no-js' lang='nl'>
+    <head>
+        {% include 'partials/head.twig' %}
+    </head>
+    <body>
+        {% include 'partials/menu.twig' %}
+        {{ post.content|raw }}
+        {% include 'partials/footer.twig' %}
+    </body>
+</html>
