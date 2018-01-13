@@ -1,0 +1,10 @@
+<li class='c-siteNav__item{% if item.current %} c-siteNav__item--active{% endif %}'>
+    <a href='{{ item.link }}' class='c-siteNav__link'>{{ item.title }}</a>
+    {% if item.get_children %}
+        <ul class='c-siteNav__subMenu'>
+            {% for item in item.get_children %}
+                {% include 'components/siteNav__item.twig' with { item: item } %}
+            {% endfor %}
+        </ul>
+    {% endif %}
+</li>

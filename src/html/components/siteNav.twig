@@ -1,0 +1,18 @@
+<div class='c-siteNav'>
+    <a class='c-siteNav__open' href='#trigger:nav'>Menu</a>
+    <a class='c-siteNav__target' id='trigger:nav'></a>
+    <div class='c-siteNav__panel'>
+        <ul class='c-siteNav__list'>
+            <li class='c-siteNav__item c-siteNav__item--home'>
+                {% include 'components/minimalLogo.twig' %}
+            </li>
+            <li class='c-siteNav__item c-siteNav__item--close'>
+                <a href='#0' class='c-siteNav__link c-siteNav__link--close'>Sluit</a>
+            </li>
+            {% for item in menu.get_items %}
+                {% include 'components/siteNav__item.twig' with { item: item } %}
+            {% endfor %}
+        </ul>
+        {% include 'components/joinConversation.twig' %}
+    </div>
+</div>
