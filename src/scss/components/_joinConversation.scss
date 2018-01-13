@@ -8,6 +8,18 @@
     margin-bottom: 0.25em;
 }
 
+.c-siteNav__panel .c-joinConversation {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 3em;
+    text-align: center;
+    color: $color-white;
+}
+
+.c-siteNav__panel .c-joinConversation__label {
+    margin-bottom: 0.5em;
+}
+
 @media (min-width: 800px) {
     .c-joinConversation__label {
         display: inline-block;
