@@ -1,0 +1,12 @@
+.p-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    height: 50px;
+    padding: 0 1em;
+    background-color: $color-dark-red;
+    z-index: 10000;
+    overflow: visible;
+}
