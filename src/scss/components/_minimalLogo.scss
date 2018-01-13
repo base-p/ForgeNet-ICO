@@ -1,0 +1,19 @@
+.c-minimalLogo {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-white;
+    line-height: 50px;
+}
+
+.c-siteNav__panel .c-minimalLogo {
+    color: $color-black;
+}
+
+.c-minimalLogo__avatar {
+    display: inline-block;
+    transform: translateY(3px);
+}
+
+.c-minimalLogo__company {
+    font-family: $font-headings;
+}
