@@ -2,6 +2,10 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    padding-top: 50px;
+}
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -39,6 +43,38 @@ img {
 
 .l-row--fullwidth .l-row__inner {
     max-width: none;
+}
+
+/**
+ * Row types
+ */
+
+.l-row--tile .l-row__inner {
+    padding: 2em;
+    background: $color-white;
+}
+
+@media (min-width: 800px) {
+    .l-row--tile .l-row__inner {
+        padding: 2em 3em;
+    }
+}
+
+@media (min-width: 1000px) {
+    .l-row--tile .l-row__inner {
+        padding: 2em 4em;
+    }
+}
+
+@media (min-width: 1080px) {
+    .l-row--tile {
+        padding: 6em 4em;
+    }
+}
+
+.l-row--fire {
+    color: #fff;
+    background: radial-gradient(90% 100%,#ff0006 0,#5b1215 100%);
 }
 
 /**
