@@ -49,6 +49,8 @@ final class SiteConfig extends Site
 
         add_shortcode('section', function ($attributes, $content = '') use ($renderer) {
             $content = do_shortcode($content);
+            $attributes = $this->getNormalizedAttributes($attributes, $content);
+            $attributes['isUserContent'] = true;
             return $renderer->render('section', $this->getNormalizedAttributes($attributes, $content));
         });
         add_shortcode('sectionTitle', function ($attributes, $content = '') use ($renderer) {
@@ -96,6 +98,9 @@ final class SiteConfig extends Site
         });
         add_shortcode('event', function ($attributes, $content = '') use ($renderer) {
             return $renderer->render('event', $this->getNormalizedAttributes($attributes, $content));
+        });
+        add_shortcode('thankYou', function ($attributes, $content = '') use ($renderer) {
+            return $renderer->render('thankYou', $this->getNormalizedAttributes($attributes, $content));
         });
     }
 

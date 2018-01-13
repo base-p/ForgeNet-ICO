@@ -53,6 +53,8 @@ final class ShortCodeRenderer
                 return Timber::compile('components/timeLine.twig', $attributes);
             case 'event':
                 return Timber::compile('components/event.twig', $attributes);
+            case 'thankYou':
+                return Timber::compile('components/thankYou.twig', $attributes);
             default:
                 return '';
         }
