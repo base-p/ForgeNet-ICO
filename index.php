@@ -2,6 +2,7 @@
 
 require_once('vendor/autoload.php');
 
+use Timber\Helper;
 use Timber\Post;
 use Timber\Timber;
 use forgenet\SiteConfig;
@@ -51,5 +52,30 @@ function getPost()
         unset($post->wps_before);
     }
 
+    setMetaDescription($post);
     return $post;
+}
+
+function setMetaDescription(Post $post)
+{
+    $description = $post->get_field('_yoast_wpseo_metadesc');
+
+    if (empty($description)) {
+        $description = wptexturize($post->get_field('meta_description'));
+    }
+
+    if (empty($description)) {
+        $description = str_replace('', "'", $post->get_preview(40, true, false, true));
+    }
+
+    if (empty($description)) {
+        $description = get_bloginfo('description', 'raw');
+    }
+
+    if (strlen($description) > 300) {
+        $description = substr($description, 0, 200);
+        $description = Helper::trim_words($description, str_word_count($description) - 1);
+    }
+
+    $post->metaDescription = $description;
 }
