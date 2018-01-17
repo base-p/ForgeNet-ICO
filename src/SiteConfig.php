@@ -53,6 +53,9 @@ final class SiteConfig extends Site
             $attributes['isUserContent'] = true;
             return $renderer->render('section', $this->getNormalizedAttributes($attributes, $content));
         });
+        add_shortcode('pageTitle', function ($attributes, $content = '') use ($renderer) {
+            return $renderer->render('pageTitle', $this->getNormalizedAttributes($attributes, $content, 'text'));
+        });
         add_shortcode('sectionTitle', function ($attributes, $content = '') use ($renderer) {
             return $renderer->render('sectionTitle', $this->getNormalizedAttributes($attributes, $content, 'text'));
         });

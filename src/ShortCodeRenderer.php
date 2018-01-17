@@ -27,6 +27,8 @@ final class ShortCodeRenderer
         switch ($shortCode) {
             case 'section':
                 return Timber::compile('layout/section.twig', $attributes);
+            case 'pageTitle':
+                return Timber::compile('components/pageTitle.twig', $attributes);
             case 'sectionTitle':
                 return Timber::compile('components/sectionTitle.twig', $attributes);
             case 'countDown':
