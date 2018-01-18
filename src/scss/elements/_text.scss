@@ -87,3 +87,11 @@ dt {
 dd {
     margin-left: 110px;
 }
+
+code {
+    display: inline-block;
+    padding: 0 .5em;
+    border-radius: 2px;
+    font-size: 90%;
+    background: rgba(0, 0, 0, .2);
+}
