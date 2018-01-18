@@ -13,5 +13,33 @@
 
 .p-footer__third {
     margin-bottom: 0;
-    opacity: .4;
+}
+
+.p-footer__third,
+.p-footer__third a {
+    color: #7a6768;
+}
+
+.p-footer__third p {
+    margin-bottom: 0.25em;
+}
+
+.p-footer__third a {
+    display: inline-block;
+}
+
+.p-footer__third ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.p-footer__third li {
+    display: inline-block;
+}
+
+.p-footer__third li:first-child::after {
+    content: '•';
+    margin: 0 .25em 0 .5em;
+    text-decoration: none;
 }
