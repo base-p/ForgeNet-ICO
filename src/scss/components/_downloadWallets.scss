@@ -1,0 +1,42 @@
+.c-downloadWallets {
+    height: 100%;
+    max-width: calc(525px - 1em);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.c-downloadWallets li {
+    margin-bottom: 1em;
+}
+
+.c-downloadWallets__button {
+    display: block;
+    padding: 1em 2em;
+    border: 1px solid #1f0202;
+    border-radius: 5px;
+    background: transparent no-repeat 1.5em 50%;
+    background-size: 24px;
+}
+
+.c-downloadWallets__cta,
+.c-downloadWallets__type {
+    display: block;
+    text-align: center;
+}
+
+.c-downloadWallets__cta {
+    opacity: .5;
+}
+
+.c-downloadWallets__windows .c-downloadWallets__button {
+    background-image: url(../../assets/icons/icon-windows.svg);
+}
+
+.c-downloadWallets__linux .c-downloadWallets__button {
+    background-image: url(../../assets/icons/icon-linux.svg);
+}
+
+.c-downloadWallets__osx .c-downloadWallets__button {
+    background-image: url(../../assets/icons/icon-osx.svg);
+}

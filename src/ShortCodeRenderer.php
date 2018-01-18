@@ -57,6 +57,12 @@ final class ShortCodeRenderer
                 return Timber::compile('components/event.twig', $attributes);
             case 'thankYou':
                 return Timber::compile('components/thankYou.twig', $attributes);
+            case 'downloadWallets':
+                return Timber::compile('components/downloadWallets.twig', $attributes);
+            case 'pageIntroduction':
+                return Timber::compile('components/pageIntroduction.twig', $attributes);
+            case 'dropCap':
+                return Timber::compile('components/dropCap.twig', $attributes);
             default:
                 return '';
         }

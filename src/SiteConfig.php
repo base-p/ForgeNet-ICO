@@ -105,6 +105,15 @@ final class SiteConfig extends Site
         add_shortcode('thankYou', function ($attributes, $content = '') use ($renderer) {
             return $renderer->render('thankYou', $this->getNormalizedAttributes($attributes, $content));
         });
+        add_shortcode('downloadWallets', function ($attributes, $content = '') use ($renderer) {
+            return $renderer->render('downloadWallets', $this->getNormalizedAttributes($attributes, $content));
+        });
+        add_shortcode('pageIntroduction', function ($attributes, $content = '') use ($renderer) {
+            return $renderer->render('pageIntroduction', $this->getNormalizedAttributes($attributes, $content));
+        });
+        add_shortcode('dropCap', function ($attributes, $content = '') use ($renderer) {
+            return $renderer->render('dropCap', $this->getNormalizedAttributes($attributes, $content));
+        });
     }
 
     /**
