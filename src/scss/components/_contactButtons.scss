@@ -1,0 +1,47 @@
+.c-contactButtons {
+    margin-top: 4em;
+}
+
+.c-contactButtons li {
+    margin-bottom: 1em;
+}
+
+.c-contactButtons .c-socialMediaLink {
+    display: block;
+    text-indent: 0;
+    padding: 1em 1em 1em 3em;
+    width: auto;
+    height: auto;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-position: 1em 50%;
+    text-decoration: none;
+    color: #000;
+    transition: background-color .2s;
+}
+
+.c-contactButtons .c-socialMediaLink:hover {
+    background-color: #fff;
+}
+
+@media (min-width: 600px) {
+    .c-contactButtons {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 760px;
+        margin-left: auto !important;
+        margin-right: auto;
+    }
+
+    .c-contactButtons li {
+        width: calc(50% - 0.5em);
+    }
+
+    .c-contactButtons li:nth-child(odd) {
+        margin-right: 0.5em;
+    }
+
+    .c-contactButtons li:nth-child(even) {
+        margin-left: 0.5em;
+    }
+}

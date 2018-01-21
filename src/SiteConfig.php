@@ -114,6 +114,9 @@ final class SiteConfig extends Site
         add_shortcode('dropCap', function ($attributes, $content = '') use ($renderer) {
             return $renderer->render('dropCap', $this->getNormalizedAttributes($attributes, $content));
         });
+        add_shortcode('contactButtons', function ($attributes, $content = '') use ($renderer) {
+            return $renderer->render('contactButtons', $this->getNormalizedAttributes($attributes, $content));
+        });
     }
 
     /**
