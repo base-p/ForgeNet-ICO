@@ -77,3 +77,11 @@ input[type='submit']:hover {
     background-color: $color-dark-red;
     color: $color-white;
 }
+
+form div.wpcf7-validation-errors {
+    margin: 0;
+    background: #f00;
+    border: 0;
+    color: #fff;
+    padding: 1em;
+}
