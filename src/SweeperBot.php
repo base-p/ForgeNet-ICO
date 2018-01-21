@@ -40,6 +40,11 @@ final class SweeperBot
 		add_filter('use_default_gallery_style', '__return_false');
 		add_filter('emoji_svg_url', '__return_false');
 
+        if (!is_admin()) {
+            wp_deregister_script('jquery');
+            wp_register_script('jquery', '', '', '', true);
+        }
+
 		return $this;
 	}
 
