@@ -21,6 +21,9 @@
     {% elseif service == 'reddit' %}
         {% set url = 'https://www.reddit.com/r/TheForgeNetwork/' %}
         {% set title = 'Reddit' %}
+    {% elseif service == 'email' %}
+        {% set url = 'mailto:info@theforgenetwork.com' %}
+        {% set title = 'E-mail' %}
     {% endif %}
 {% endif %}
 
