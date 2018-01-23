@@ -23,6 +23,13 @@
     z-index: 2;
 }
 
+.c-event__date {
+    font-size: .7em;
+    display: block;
+    line-height: 1;
+    color: grey;
+}
+
 @media (min-width: 480px) {
     .c-event {
         max-width: 80%;
