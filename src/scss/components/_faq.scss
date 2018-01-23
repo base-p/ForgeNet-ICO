@@ -1,0 +1,35 @@
+.c-faq__question {
+    margin-bottom: 1.1em;
+}
+
+.c-faq__question h3 {
+    position: relative;
+    margin: 0 0 .5em;
+    padding-left: 20px;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.c-faq__question h3::before {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    content: '▶';
+    margin-right: .5em;
+    font-size: .6em;
+}
+
+.c-faq__question--active h3::before {
+    content: '▼';
+}
+
+.c-faq__answer {
+    max-height: 0;
+    padding-left: 20px;
+    transition: max-height .2s;
+    overflow: hidden;
+}
+
+.c-faq__question--active .c-faq__answer {
+    max-height: 1000px;
+}

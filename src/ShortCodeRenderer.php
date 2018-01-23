@@ -65,6 +65,12 @@ final class ShortCodeRenderer
                 return Timber::compile('components/dropCap.twig', $attributes);
             case 'contactButtons':
                 return Timber::compile('components/contactButtons.twig', $attributes);
+            case 'faq':
+                return Timber::compile('components/faq.twig', $attributes);
+            case 'question':
+                return Timber::compile('components/faq__question.twig', $attributes);
+            case 'answer':
+                return Timber::compile('components/faq__answer.twig', $attributes);
             default:
                 return '';
         }

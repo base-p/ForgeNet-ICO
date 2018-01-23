@@ -117,6 +117,17 @@ final class SiteConfig extends Site
         add_shortcode('contactButtons', function ($attributes, $content = '') use ($renderer) {
             return $renderer->render('contactButtons', $this->getNormalizedAttributes($attributes, $content));
         });
+        add_shortcode('faq', function ($attributes, $content = '') use ($renderer) {
+            $content = do_shortcode($content);
+            return $renderer->render('faq', $this->getNormalizedAttributes($attributes, $content));
+        });
+        add_shortcode('question', function ($attributes, $content = '') use ($renderer) {
+            $content = do_shortcode($content);
+            return $renderer->render('question', $this->getNormalizedAttributes($attributes, $content));
+        });
+        add_shortcode('answer', function ($attributes, $content = '') use ($renderer) {
+            return $renderer->render('answer', $this->getNormalizedAttributes($attributes, $content));
+        });
     }
 
     /**
