@@ -33,6 +33,10 @@
 
             if (t.total <= 0) {
                 clearInterval(timeinterval);
+                var html = "<h2 class='c-sectionTitle'>Early bird sale has started!</h2>";
+                html += "<p>Exciting times at ForgeNet! <strong>The early-bird is live!</strong> Claim your FRG for the incredibly low price of $0.50 per coin, only available during the early-bird sale. Don't miss out!</p>";
+                html += "<p><a class='c-button c-button--white' target='_blank' href='https://shop.theforgenetwork.com/'>Enter the FRG Shop</a></p>";
+                clock.innerHTML = html;
             }
         }
 
